@@ -7,8 +7,8 @@
       <li>Max</li>
     </ul>
     <div class="message-form">
-      <input type="text" placeholder="Message">
-      <button>Send</button>
+      <input #memberInput type="text" placeholder="Message" (input)="saveNewMember(memberInput.value)" />
+      <button (click)="addMember()">Add</button>
     </div>
   </div>
 </div>

@@ -9,4 +9,13 @@ export class AppComponent {
   // title = 'my-angular-app';
   newMemberName = '';
   members: string[] = [];
+
+  saveNewMember(member: string) {
+    this.newMemberName = member;
+  }
+
+  addMember() {
+    this.members.push(this.newMemberName);
+    console.log(this.members);
+  }
 }
