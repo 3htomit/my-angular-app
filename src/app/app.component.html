@@ -1,13 +1,16 @@
 <div>
   <div class="chat-table">
     <h1>Chat A</h1>
-    <ul>
-      <li>Mike</li>
-      <li>Tom</li>
-      <li>Max</li>
+    <ul class="list">
+      <li *ngFor="let member of members">{{ member }}</li>
     </ul>
     <div class="message-form">
-      <input #memberInput type="text" placeholder="Message" (input)="saveNewMember(memberInput.value)" />
+      <input
+        #memberInput
+        type="text"
+        placeholder="Message"
+        (input)="saveNewMember(memberInput.value)"
+      />
       <button (click)="addMember()">Add</button>
     </div>
   </div>
