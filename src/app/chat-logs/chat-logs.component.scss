@@ -1,11 +1,16 @@
 .messages-list {
-  height: 10vh;
-  background-color: aliceblue;
+  height: 50vh;
+  background-color: none;
   list-style: none;
   padding: 0.5rem 1.5rem;
   overflow: hidden;
   overflow-y: scroll;
   .message {
-    padding: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #218380;
+    width: fit-content;
+    color: white;
+    border-radius: 1rem 1rem 1rem 0;
   }
 }

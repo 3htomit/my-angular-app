@@ -1,24 +1,24 @@
 <div class="chat-input">
   <div class="username-form">
-    <label for="username">Username</label>
+    <label for="username"><fa-icon [icon]="faUser"></fa-icon></label>
     <input
       #usernameInput
       type="text"
       name="username"
       class="username-input"
-      placeholder="Username"
+      placeholder="My username..."
       (input)="saveUsername(usernameInput.value)"
       [value]="currentUsername"
     />
   </div>
   <div class="message-form">
-    <label for="message">Message</label>
+    <label for="message"><fa-icon [icon]="faComment"></fa-icon></label>
     <textarea
       #messageInput
       type="text"
       name="message"
       class="message-input"
-      placeholder="Message"
+      placeholder="My message..."
       (input)="saveNewMessage(messageInput.value)"
       [value]="newMessage"
       (keyup.enter)="sendMessage()"

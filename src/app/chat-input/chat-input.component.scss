@@ -3,6 +3,8 @@
     margin: 0.5rem 1rem;
     width: 7rem;
     text-align: right;
+    color: grey;
+    font-size: 20px;
   }
   .username-form {
     display: flex;
@@ -10,7 +12,12 @@
     align-items: flex-start;
     .username-input {
       margin: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
       width: 100%;
+      background-color: #fffaef;
+      border: none;
+      font-size: 15px;
     }
   }
   .message-form {
@@ -19,13 +26,30 @@
     align-items: flex-start;
     .message-input {
       margin: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
       width: 100%;
       height: 5rem;
+      background-color: #fffaef;
+      border: none;
+      font-size: 15px;
     }
   }
   button {
     float: right;
     margin: 0.5rem;
+    padding: 1rem 3rem;
+    border: 3px solid #d7896b;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: #d7896b;
+    font-weight: 500;
+    font-size: 17px;
+    &:hover {
+      border: 3px solid #ca663f;
+      color: #ca663f;
+      background-color: #fbf3ef;
+    }
   }
   .error-message {
     color: red;
