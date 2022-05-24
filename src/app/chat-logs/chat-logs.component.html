@@ -1,0 +1,6 @@
+<ul class="list">
+  <li *ngFor="let msg of messages" class="message">
+    <strong>{{ msg.username }} :</strong> {{ msg.message }}
+    <button (click)="displayData()">Display</button>
+  </li>
+</ul>

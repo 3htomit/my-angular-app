@@ -1,8 +1,12 @@
-.chat-table {
-  background-color: lightcyan;
-  width: 30rem;
-  h1 {
-    padding: 1rem;
-    text-align: center;
+.chat-app {
+  display: flex;
+  justify-content: space-around;
+  .chat-card {
+    background-color: lightcyan;
+    width: 30rem;
+    h1 {
+      padding: 1rem;
+      text-align: center;
+    }
   }
 }

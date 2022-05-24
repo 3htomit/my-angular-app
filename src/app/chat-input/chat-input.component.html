@@ -1,0 +1,24 @@
+<div class="chat-input">
+  <h1 *ngIf="currentUsername">{{ currentUsername }}'s chat</h1>
+  <h1 *ngIf="!currentUsername">Chat</h1>
+  <input
+    #usernameInput
+    type="text"
+    placeholder="Username"
+    (input)="saveUsername(usernameInput.value)"
+    [value]="currentUsername"
+  />
+  <div class="message-form">
+    <input
+      #messageInput
+      type="text"
+      placeholder="Message"
+      (input)="saveNewMessage(messageInput.value)"
+      [value]="newMessage"
+    />
+    <button (click)="sendMessage()">Send</button>
+    <p *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </p>
+  </div>
+</div>

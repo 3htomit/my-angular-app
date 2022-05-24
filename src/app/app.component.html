@@ -1,17 +1,22 @@
-<div>
-  <div class="chat-table">
-    <h1>Chat A</h1>
-    <ul class="list">
-      <li *ngFor="let member of members">{{ member }}</li>
-    </ul>
-    <div class="message-form">
-      <input
-        #memberInput
-        type="text"
-        placeholder="Message"
-        (input)="saveNewMember(memberInput.value)"
-      />
-      <button (click)="addMember()">Add</button>
-    </div>
+<div class="chat-app">
+  <div class="chat-card">
+    <app-chat-input
+      [messages]="messages"
+      [messagePackage]="messagePackage"
+      id="a-message"
+    ></app-chat-input>
+    <app-chat-logs
+      [messages]="messages"
+    ></app-chat-logs>
+  </div>
+  <div class="chat-card">
+    <app-chat-input
+      [messages]="messages"
+      [messagePackage]="messagePackage"
+      id="b-message"
+    ></app-chat-input>
+    <app-chat-logs
+      [messages]="messages"
+    ></app-chat-logs>
   </div>
 </div>
