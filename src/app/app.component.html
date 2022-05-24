@@ -1,22 +1,12 @@
 <div class="chat-app">
   <div class="chat-card">
-    <app-chat-input
-      [messages]="messages"
-      [messagePackage]="messagePackage"
-      id="a-message"
-    ></app-chat-input>
-    <app-chat-logs
-      [messages]="messages"
-    ></app-chat-logs>
+    <h1>Chat A</h1>
+    <app-chat-logs [messages]="messages"></app-chat-logs>
+    <app-chat-input [messages]="messages" id="b-message"></app-chat-input>
   </div>
   <div class="chat-card">
-    <app-chat-input
-      [messages]="messages"
-      [messagePackage]="messagePackage"
-      id="b-message"
-    ></app-chat-input>
-    <app-chat-logs
-      [messages]="messages"
-    ></app-chat-logs>
+    <h1>Chat B</h1>
+    <app-chat-logs [messages]="messages"></app-chat-logs>
+    <app-chat-input [messages]="messages" id="a-message"></app-chat-input>
   </div>
 </div>

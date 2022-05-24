@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { faUser } from '@fortawesome/free-regular-svg-icons';
+import { faComment } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-chat-input',
@@ -6,12 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./chat-input.component.scss'],
 })
 export class ChatInputComponent implements OnInit {
-  @Input() messages = [{}];
-  @Input() messagePackage: any;
+  @Input() messages: object[] = [];
+
+  faUser = faUser;
+  faComment = faComment;
 
   currentUsername = '';
   newMessage = '';
-
   errorMessage = '';
 
   saveUsername(username: string) {
@@ -30,11 +33,12 @@ export class ChatInputComponent implements OnInit {
     if (!this.newMessage || !this.currentUsername) {
       this.errorMessage = 'Please fill in the inputs.';
     } else {
-      this.messagePackage.username = this.currentUsername;
-      this.messagePackage.message = this.newMessage;
-      this.messages.push(this.messagePackage);
+      this.messages.push({
+        username: this.currentUsername,
+        message: this.newMessage,
+      });
       this.newMessage = '';
-      console.log(this.messagePackage);
+      console.log(this.messages[this.messages.length - 1]);
       console.log(this.messages);
     }
   }
