@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  messages: object[] = [];
+  messages: object[] = [{username: "Tim", message: "Hi there!"}, {username: "Mike", message: "What's up?"}];
 }
