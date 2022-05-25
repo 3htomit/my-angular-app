@@ -1,0 +1,12 @@
+<div #scrollBottom class="messages-list">
+  <div *ngFor="let msg of messages" class="message-line">
+    <p
+      [ngClass]="msg.chat === 'A' ? 'a-message' : 'b-message'"
+      class="message-bubble"
+    >
+      <span class="username">{{ msg.username }}</span>
+      <br />
+      {{ msg.message }}
+    </p>
+  </div>
+</div>

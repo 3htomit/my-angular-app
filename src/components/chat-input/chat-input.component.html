@@ -11,6 +11,7 @@
       [value]="currentUsername"
     />
   </div>
+
   <div class="message-form">
     <label for="message"><fa-icon [icon]="faComment"></fa-icon></label>
     <textarea
@@ -24,6 +25,7 @@
       (keyup.enter)="sendMessage()"
     ></textarea>
   </div>
+  
   <button class="send-btn" (click)="sendMessage()">Send</button>
   <p *ngIf="errorMessage" class="error-message">
     {{ errorMessage }}

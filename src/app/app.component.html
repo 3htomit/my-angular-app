@@ -1,12 +1,17 @@
 <div class="chat-app">
   <div class="chat-card">
-    <h1>Chat A</h1>
+    <h1 id="a-title">Chat A</h1>
+    <hr id="a-line" />
     <app-chat-logs [messages]="messages"></app-chat-logs>
-    <app-chat-input [messages]="messages" id="b-message"></app-chat-input>
+    <hr id="a-line" />
+    <app-chat-input [aChat]="aChat" [messages]="messages"></app-chat-input>
   </div>
+
   <div class="chat-card">
-    <h1>Chat B</h1>
+    <h1 id="b-title">Chat B</h1>
+    <hr id="b-line" />
     <app-chat-logs [messages]="messages"></app-chat-logs>
-    <app-chat-input [messages]="messages" id="a-message"></app-chat-input>
+    <hr id="b-line" />
+    <app-chat-input [bChat]="bChat" [messages]="messages"></app-chat-input>
   </div>
 </div>

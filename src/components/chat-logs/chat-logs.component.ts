@@ -12,6 +12,7 @@ import {
   templateUrl: './chat-logs.component.html',
   styleUrls: ['./chat-logs.component.scss'],
 })
+
 export class ChatLogsComponent implements OnInit, AfterViewChecked {
   @Input() messages: any[] = [];
   @ViewChild('scrollBottom') private scrollBottom: ElementRef;

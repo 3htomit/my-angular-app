@@ -1,6 +1,7 @@
 .chat-app {
   display: flex;
   justify-content: space-around;
+  
   .chat-card {
     background-color: white;
     border-radius: 1rem;
@@ -8,10 +9,23 @@
     padding: 1rem;
     margin: 2rem;
     box-shadow: 5px 5px 20px lightgray;
+
     h1 {
       // padding: 1rem;
       margin: 1rem;
       text-align: center;
+    }
+
+    hr {
+      border: none;
+      height: 1.5px;
+      border-radius: 1px;
+    }
+    #a-line {
+      background-color: #218380;
+    }
+    #b-line {
+      background-color: #d7896b;
     }
   }
 }

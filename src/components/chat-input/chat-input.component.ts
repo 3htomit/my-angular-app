@@ -7,8 +7,11 @@ import { faComment } from '@fortawesome/free-regular-svg-icons';
   templateUrl: './chat-input.component.html',
   styleUrls: ['./chat-input.component.scss'],
 })
+
 export class ChatInputComponent implements OnInit {
   @Input() messages: object[] = [];
+  @Input() aChat: string;
+  @Input() bChat: string;
 
   faUser = faUser;
   faComment = faComment;
@@ -19,7 +22,11 @@ export class ChatInputComponent implements OnInit {
 
   saveUsername(username: string) {
     this.currentUsername = username;
-    console.log(this.currentUsername);
+    // console.log(this.currentUsername);
+  }
+
+  displayTemplateVariable() {
+    console.log();
   }
 
   saveNewMessage(message: string) {
@@ -32,14 +39,20 @@ export class ChatInputComponent implements OnInit {
   sendMessage() {
     if (!this.newMessage || !this.currentUsername) {
       this.errorMessage = 'Please fill in the inputs.';
-    } else {
+    } else if (this.aChat) {
       this.messages.push({
+        chat: 'A',
         username: this.currentUsername,
         message: this.newMessage,
       });
       this.newMessage = '';
-      console.log(this.messages[this.messages.length - 1]);
-      console.log(this.messages);
+    } else {
+      this.messages.push({
+        chat: 'B',
+        username: this.currentUsername,
+        message: this.newMessage,
+      });
+      this.newMessage = '';
     }
   }
 

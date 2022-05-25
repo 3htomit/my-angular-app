@@ -6,10 +6,12 @@
     color: grey;
     font-size: 20px;
   }
+
   .username-form {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     .username-input {
       margin: 0.5rem;
       padding: 0.5rem;
@@ -20,10 +22,12 @@
       font-size: 15px;
     }
   }
+
   .message-form {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
     .message-input {
       margin: 0.5rem;
       padding: 0.5rem;
@@ -35,22 +39,25 @@
       font-size: 15px;
     }
   }
+
   button {
     float: right;
     margin: 0.5rem;
-    padding: 1rem 3rem;
-    border: 3px solid #d7896b;
+    padding: 0.5rem 2rem;
+    border: 2px solid #d7bf6b;
     border-radius: 0.5rem;
     background-color: white;
-    color: #d7896b;
+    color: #d7bf6b;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 15px;
+    
     &:hover {
-      border: 3px solid #ca663f;
-      color: #ca663f;
-      background-color: #fbf3ef;
+      border: 2px solid #c0a235;
+      color: #c0a235;
+      background-color: #fffaef;
     }
   }
+
   .error-message {
     color: red;
   }
