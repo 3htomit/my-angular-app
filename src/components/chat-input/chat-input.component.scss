@@ -20,6 +20,10 @@
       background-color: #fffaef;
       border: none;
       font-size: 15px;
+
+      &::placeholder {
+        font-weight: 300;
+      }
     }
   }
 
@@ -37,6 +41,10 @@
       background-color: #fffaef;
       border: none;
       font-size: 15px;
+
+      &::placeholder {
+        font-weight: 300;
+      }
     }
   }
 
@@ -50,7 +58,7 @@
     color: #d7bf6b;
     font-weight: 500;
     font-size: 15px;
-    
+
     &:hover {
       border: 2px solid #c0a235;
       color: #c0a235;
