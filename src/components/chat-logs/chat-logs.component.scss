@@ -15,6 +15,7 @@
       margin-bottom: 1rem;
       width: fit-content;
       color: white;
+      white-space: pre-line;
 
       .username {
         font-weight: 300;
@@ -30,9 +31,9 @@
       margin-top: 0;
       margin-bottom: 0;
     }
-    
+
     .b-message {
-      background-color: #D7896B;
+      background-color: #d7896b;
       max-width: 80%;
       border-radius: 1rem 1rem 0 1rem;
       margin-left: auto;
