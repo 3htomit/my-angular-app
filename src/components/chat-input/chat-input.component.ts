@@ -7,11 +7,9 @@ import { faComment } from '@fortawesome/free-regular-svg-icons';
   templateUrl: './chat-input.component.html',
   styleUrls: ['./chat-input.component.scss'],
 })
-
 export class ChatInputComponent implements OnInit {
   @Input() messages: object[] = [];
   @Input() aChat: string;
-  @Input() bChat: string;
 
   faUser = faUser;
   faComment = faComment;
@@ -22,11 +20,6 @@ export class ChatInputComponent implements OnInit {
 
   saveUsername(username: string) {
     this.currentUsername = username;
-    // console.log(this.currentUsername);
-  }
-
-  displayTemplateVariable() {
-    console.log();
   }
 
   saveNewMessage(message: string) {

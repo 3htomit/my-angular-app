@@ -17,10 +17,6 @@ export class ChatLogsComponent implements OnInit, AfterViewChecked {
   @Input() messages: any[] = [];
   @ViewChild('scrollBottom') private scrollBottom: ElementRef;
 
-  displayData() {
-    console.log(this.messages[0].username);
-  }
-
   constructor() {}
 
   ngOnInit(): void {
