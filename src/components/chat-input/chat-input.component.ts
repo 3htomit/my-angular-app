@@ -47,9 +47,20 @@ export class ChatInputComponent implements OnInit {
       });
       this.newMessage = '';
     }
+    localStorage.removeItem('Messages');
+    localStorage.setItem('Messages', JSON.stringify(this.messages));
   }
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (localStorage.getItem('Messages')) {
+      JSON.parse(localStorage.getItem('Messages') || '{}').forEach(
+        (message: object) => {
+          this.messages.push(message);
+        }
+      );
+      localStorage.removeItem('Messages');
+    }
+  }
 }

@@ -3,6 +3,17 @@
 * {
   font-family: 'Ubuntu', sans-serif;
 }
+
 body {
   background-color: #f8f9fa;
+}
+
+button {
+  float: right;
+  margin: 0.5rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-weight: 500;
+  font-size: 15px;
 }

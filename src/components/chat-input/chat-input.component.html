@@ -25,7 +25,7 @@
       (keyup.enter)="sendMessage()"
     ></textarea>
   </div>
-  
+
   <button class="send-btn" (click)="sendMessage()">Send</button>
   <p *ngIf="errorMessage" class="error-message">
     {{ errorMessage }}

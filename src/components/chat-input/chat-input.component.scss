@@ -48,16 +48,9 @@
     }
   }
 
-  button {
-    float: right;
-    margin: 0.5rem;
-    padding: 0.5rem 2rem;
+  .send-btn {
     border: 2px solid #d7bf6b;
-    border-radius: 0.5rem;
-    background-color: white;
     color: #d7bf6b;
-    font-weight: 500;
-    font-size: 15px;
 
     &:hover {
       border: 2px solid #c0a235;

@@ -1,7 +1,7 @@
 .chat-app {
   display: flex;
   justify-content: space-around;
-  
+
   .chat-card {
     background-color: white;
     border-radius: 1rem;
@@ -27,5 +27,16 @@
     #b-line {
       background-color: #d7896b;
     }
+  }
+}
+
+.clear-btn {
+  border: 2px solid #9b4648;
+  color: #9b4648;
+
+  &:hover {
+    border: 2px solid #542627;
+    color: #542627;
+    background-color: #f9f1f1;
   }
 }
